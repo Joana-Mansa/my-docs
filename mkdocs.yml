@@ -1,0 +1,36 @@
+site_name: My Project Docs
+site_url: https://jo-mansa.github.io/my-docs/
+repo_url: hhttps://github.com/jo-mansa/my-docs
+edit_url: edit/main/docs/ # adds an 'Edit this page' pencil
+
+
+theme:
+  name: material
+  features:
+    - navigation.instant     # SPA-style fast page loads
+    - navigation.tabs        # top-level sections as tabs
+    - navigation.sections
+    - toc.integrate          # table of contents in the sidebar
+    - search.suggest
+    - content.action.edit
+  palette:
+    - scheme: default
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - scheme: slate
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+markdown_extensions: # unlock callouts, tabbed content, better code blocks
+  - admonition
+  - pymdownx.highlight
+  - pymdownx.superfences
+  - toc:
+      permalink: true
+nav: # controls the sidebad and page ordering
+  - Home: index.md
+  - Getting Started: getting-started.md
+  - Reference: reference.md
+
+
